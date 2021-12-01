@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#222"
+    android:paddingHorizontal="15sp"
+    android:paddingVertical="20sp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Varos"
+        android:textColorHint="#666"
+        android:padding="20sp"
+        android:id="@+id/varosET"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kereses"
+            android:backgroundTint="#249"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10sp"
+            android:padding="10sp"
+            android:id="@+id/btnKeres"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uj felvetele"
+            android:backgroundTint="#191"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10sp"
+            android:padding="10sp"
+            android:id="@+id/btnFelvetel"/>
+
+    </LinearLayout>
+
+</LinearLayout>

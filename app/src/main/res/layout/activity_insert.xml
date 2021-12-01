@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#222"
+    android:paddingHorizontal="15sp"
+    android:paddingVertical="20sp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nev"
+        android:textColorHint="#666"
+        android:padding="20sp"
+        android:id="@+id/nevEtAtInsert"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Orszag"
+        android:textColorHint="#666"
+        android:padding="20sp"
+        android:id="@+id/orszagEtAtInsert"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lakossag"
+        android:inputType="number"
+        android:textColorHint="#666"
+        android:padding="20sp"
+        android:id="@+id/lakossagEtAtInsert"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="20sp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vissza"
+            android:backgroundTint="#A11"
+            android:layout_marginHorizontal="10sp"
+            android:padding="10sp"
+            android:layout_weight="1"
+            android:id="@+id/btnVisszaAtInsert"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Felvetel"
+            android:backgroundTint="#191"
+            android:layout_marginHorizontal="10sp"
+            android:padding="10sp"
+            android:layout_weight="1"
+            android:id="@+id/btnFelvetelAtInsert"/>
+
+    </LinearLayout>
+
+</LinearLayout>
