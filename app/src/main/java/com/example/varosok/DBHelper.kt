@@ -41,9 +41,21 @@ class DBHelper(var context: Context) : SQLiteOpenHelper(context, DB_NAME, null, 
         }
     }
 
-    fun getVaros() : ArrayList<Varos> {
+    fun getVaros(orszag : String) : ArrayList<String> {
+        var list : ArrayList<String> = ArrayList()
+
         var db = this.readableDatabase
-        var query = "SELECT * FROM $TABLE_NAME"
-        var results = db.execSQL(query)
+        var query = "$COL_ORSZAG = '$orszag'"
+        var results = db.query(TABLE_NAME, null, query, null, null, null, null, null)
+
+        if(results.moveToFirst()) {
+            do {
+                var nev = results.getString(1)
+                list.add(nev)
+            } while (results.moveToNext())
+        }
+        results.close()
+        db.close()
+        return list
     }
 }

@@ -19,6 +19,10 @@ class Varos {
         this.lakossag = lakossag
     }
 
+    fun getVaros() : String {
+        return nev
+    }
+
     override fun toString(): String {
         return "$id: $nev, $orszag, $lakossag"
     }

@@ -13,8 +13,9 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Varos"
+        android:hint="Orszag"
         android:textColorHint="#666"
+        android:textColor="@color/white"
         android:padding="20sp"
         android:id="@+id/varosET"/>
 
